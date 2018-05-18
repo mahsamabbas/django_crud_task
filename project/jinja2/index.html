@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Django CRUD APP</title>
+    </head>
+    <style>
+        body{
+            background: black;
+        }
+        .links {
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+            padding-top: 50vh;
+        }
+        .links a{
+            color: white;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+    </style>
+    <body>
+    <div class="links">
+        <a href="{{ url('owners:index') }}">Login for pet owners</a>
+        |
+        <a href="{{ url('admin:index') }}">Login for admins</a>
+    </div>
+    </body>
+</html>
